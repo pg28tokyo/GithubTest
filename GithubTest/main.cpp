@@ -38,6 +38,7 @@ int CALLBACK WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance,
         ClearDrawScreen();
 
         DrawString(10, 10, DRAW_TEXT, textColor);
+        DrawString(10, 700, DRAW_TEXT, textColor);
 
         ScreenFlip();
     }
