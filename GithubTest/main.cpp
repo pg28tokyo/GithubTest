@@ -7,6 +7,8 @@ namespace {
     constexpr auto SCREEN_WIDTH  = 1280;
     constexpr auto SCREEN_HEIGHT = 720;
     constexpr auto SCREEN_DEPTH  = 32;
+    constexpr auto TEST_STRING = _T("HAYATOIMAI");
+    constexpr auto STRING_POS = 400;
 }
 
 int CALLBACK WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPSTR lpCmdLine, _In_ int nCmdShow) {
@@ -38,6 +40,7 @@ int CALLBACK WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance,
         ClearDrawScreen();
 
         DrawString(10, 10, DRAW_TEXT, textColor);
+        DrawString(STRING_POS, STRING_POS, TEST_STRING, textColor);
 
         ScreenFlip();
     }
