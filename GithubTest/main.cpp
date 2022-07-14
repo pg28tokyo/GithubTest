@@ -3,7 +3,7 @@
 
 namespace {
     constexpr auto WINDOW_TITLE  = _T("Github Test");
-    constexpr auto DRAW_TEXT = _T("m-manaka");
+   constexpr auto DRAW_TEXT = _T("manaka");
     constexpr auto DRAW_TEXTA = _T("m-ahamedo");
     constexpr auto SCREEN_WIDTH  = 1280;
     constexpr auto SCREEN_HEIGHT = 720;
