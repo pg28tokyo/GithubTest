@@ -3,7 +3,8 @@
 
 namespace {
     constexpr auto WINDOW_TITLE  = _T("Github Test");
-    constexpr auto DRAW_TEXT = _T("manaka");
+   constexpr auto DRAW_TEXT = _T("manaka");
+    constexpr auto DRAW_TEXTA = _T("m-ahamedo");
     constexpr auto SCREEN_WIDTH  = 1280;
     constexpr auto SCREEN_HEIGHT = 720;
     constexpr auto SCREEN_DEPTH  = 32;
@@ -38,6 +39,7 @@ int CALLBACK WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance,
         ClearDrawScreen();
 
         DrawString(10, 10, DRAW_TEXT, textColor);
+        DrawString(10, 200, DRAW_TEXTA, textColor);
 
         ScreenFlip();
     }
